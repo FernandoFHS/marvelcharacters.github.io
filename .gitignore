@@ -1,2 +1,7 @@
 node_modules
 *.log
+public/index.html
+public/assets/js/app.min.js
+public/assets/js/config.js
+public/assets/js/deps.min.js
+public/template/header/header.html

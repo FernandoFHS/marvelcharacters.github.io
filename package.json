@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://fernandofhs.github.io/marvelcharacters.github.io/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp",
@@ -19,11 +20,13 @@
     "angular-ui-router": "1.0.3",
     "babel-core": "6.26.0",
     "babel-preset-env": "1.6.0",
+    "crypto-js": "^4.1.1",
     "font-awesome": "4.7.0",
     "gulp": "^3.9.1",
     "gulp-babel": "7.0.0",
     "gulp-concat": "2.6.1",
     "gulp-htmlmin": "3.0.0",
+    "gulp-ng-config": "^1.5.1",
     "gulp-uglify": "3.0.0",
     "gulp-uglifycss": "1.0.8",
     "gulp-util": "3.0.8",
@@ -31,7 +34,10 @@
     "gulp-webserver": "0.9.1",
     "run-sequence": "2.2.0"
   },
+  "overrides": {
+    "graceful-fs": "^4.2.9"
+  },
   "dependencies": {
-    "crypto-js": "^4.1.1"
+    "gh-pages": "^3.2.3"
   }
 }

@@ -5,13 +5,12 @@ angular.module('marvelCharacters').controller('CharactersListCtrl', [
   CharactersListController
 ])
 
-function CharactersListController($http, consts, marvelService,md5) {
+function CharactersListController($http, consts, marvelService) {
   const vm = this
   vm.value = (60)
-  //console.log(marvelService.getCharacters($http, consts));
-  marvelService.getCharacters($http, consts).then(res => {
-    console.log(res);
-  })
+  // marvelService.getCharacters($http, consts).then(res => {
+  //   console.log(res);
+  // })
   
   // vm.getSummary = function() {
   //   const url = `${consts.apiUrl}/billingSummary`;
