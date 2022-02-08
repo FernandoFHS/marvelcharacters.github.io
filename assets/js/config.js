@@ -1,2 +1,2 @@
 angular.module("ENV", [])
-.constant("ENV", {"redirectURI":"http://production-app.co/"});
+.constant("ENV", {"redirectURI":"http://localhost:4000/"});
