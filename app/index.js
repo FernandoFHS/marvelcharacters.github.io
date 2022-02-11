@@ -2,7 +2,8 @@ angular.module('marvelCharacters', [
   'ui.router',
   'ngAnimate',
   'toastr',
-  'ENV'
+  'ENV',
+  'angular-md5'
 ])
 angular.module('marvelCharacters').controller('IndexCtrl', [
   'ENV',

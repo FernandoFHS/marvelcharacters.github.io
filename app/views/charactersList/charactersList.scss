@@ -1,0 +1,34 @@
+.characterList, .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.characterList {
+  flex-flow: row wrap;
+  // padding: 1vmin;
+}
+.characterList {
+  font-family: "MyBangers", "Bangers", cursive !important;
+}
+
+.container-fluid {
+  margin-bottom: 50px;
+}
+.box-read-more-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.read-more-btn {
+  background-color: #fff;
+  border: 2px solid #000;
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 18px;
+  // transform: skew(-15deg);
+  border-radius: 5px;
+  font-family: "MyBangers", "Bangers", cursive !important;
+  box-shadow: 0 6px 6px -6px #000;
+}

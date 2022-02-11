@@ -1,0 +1,15 @@
+@import "./assets/style/colors.scss";
+@import "./assets/style/mixins.scss";
+
+.red-soft {
+  @include bg-primary
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+  background-color: #7c3737 !important;
+}
+
+@font-face {
+  font-family: 'MyBangers';
+  src: url('../fonts/Bangers-Regular.ttf');
+}

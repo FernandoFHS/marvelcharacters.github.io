@@ -4,8 +4,8 @@ angular.module('marvelCharacters').constant('consts', {
   owner: 'Fernando Henrique',
   year: '2022',
   apiUrl: 'https://gateway.marvel.com:443/v1/public',
-  apiKey: '5a237863b3cc2061003cbbc4fe20dc06',
-  apiPrivateKey: 'fbf255068eccea6d0ef951b9f25626b57ab2fe72',
+  apiKey: '421abf802fb85e287079c2eacbb75401',
+  apiPrivateKey: '39ca47e21a400c6fbea0f3bc443b8c7084bc3da6',
 }).run(['$rootScope', 'consts', function($rootScope, consts) {
   $rootScope.consts = consts
 }])

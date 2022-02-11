@@ -1,0 +1,17 @@
+<content-header name="CharactersList" small="Versão {{ consts.version }}"></content-header>
+<section class="content" ng-controller="CharactersListCtrl as charactersList">
+  <div class="container-fluid">
+    <div class="form-group">
+      <input type="text" class="form-control" id="search" placeholder="Digite o nome do herói" ng-model="charactersList.search" ng-change="charactersList.changeSearch()">
+      </div>
+    <div class="characterList" style="height: auto; overflow: auto;">
+      <div ng-repeat="character in charactersList.characters" class="card" ng-include="'./shared/components/card/card.html'"></div>
+    </div>
+    <div class="box-read-more-btn">
+      <button class="read-more-btn" ng-click="charactersList.loadMore()">Carregar mais</button>
+     
+      <div>Visualizando {{charactersList.countItens}} de {{charactersList.charListInfo.total}}</div>
+    </div>
+    
+  </div>
+</section>

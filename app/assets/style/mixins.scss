@@ -1,0 +1,7 @@
+@import "./colors.scss";
+.bg-primary {
+  background-color: $bg-black !important;
+}
+@mixin bg-primary {
+  background-color: $bg-black !important;
+}

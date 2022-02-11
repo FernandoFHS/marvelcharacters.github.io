@@ -15,6 +15,7 @@ gulp.task('deps.js', () => {
     'node_modules/admin-lte/bootstrap/js/bootstrap.min.js',
     'node_modules/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js',
     'node_modules/admin-lte/dist/js/app.min.js',
+    'node_modules/angular-md5/angular-md5.js',
   ])
   .pipe(uglify())
   .pipe(concat('deps.min.js'))
@@ -37,7 +38,8 @@ gulp.task('deps.css', () => {
 gulp.task('deps.fonts', () => {
   return gulp.src([
     'node_modules/font-awesome/fonts/*.*',
-    'node_modules/admin-lte/bootstrap/fonts/*.*'
+    'node_modules/admin-lte/bootstrap/fonts/*.*',
+    'app/assets/fonts/*.*'
   ])
   .pipe(gulp.dest('public/assets/fonts'))
 })

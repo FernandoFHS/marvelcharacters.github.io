@@ -1,11 +1,12 @@
 const gulp = require('gulp')
+const sass = require('gulp-sass')(require('sass'));
 const babel = require('gulp-babel')
 const uglify = require('gulp-uglify')
 const uglifycss = require('gulp-uglifycss')
 const concat = require('gulp-concat')
 const htmlmin = require('gulp-htmlmin')
 
-gulp.task('app', ['app.html', 'app.css', 'app.js', 'app.assets'])
+gulp.task('app', ['app.html', 'app.css', 'app.js', 'app.assets', 'build-css'])
 
 gulp.task('app.html', () => {
   return gulp.src('app/**/*.html')
@@ -19,6 +20,13 @@ gulp.task('app.css', () => {
     .pipe(concat('app.min.css'))
     .pipe(gulp.dest('public/assets/css'))
 })
+
+gulp.task('build-css', function() {  
+  return gulp.src('app/**/*.scss')
+      .pipe(sass())
+      .pipe(concat('app.min.css'))
+      .pipe(gulp.dest('public/assets/scss'));
+});
 
 gulp.task('app.js', () => {
   return gulp.src('app/**/*.js')
