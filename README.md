@@ -18,9 +18,9 @@ Aplicação WEB usando a API da Marvel para listar e detalhar Personagens Marvel
 
 ├────── **shared** : itens compartilhados em toda aplicação
 
-├──────────── **components** : componentes compatilhados
+   ├────── **components** : componentes compatilhados
         
-├──────────── **services** : serviços compartilhados
+   ├────── **services** : serviços compartilhados
 
 ├────── **template** : templates incluidos na aplicação
 
