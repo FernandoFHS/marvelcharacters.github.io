@@ -25,7 +25,6 @@
 .default-title {
   font-family: "MyBangers";
 }
-
 .characterList, .header {
   display: flex;
   justify-content: center;
@@ -61,6 +60,7 @@
   font-family: "MyBangers", "Bangers", cursive !important;
   box-shadow: 0 6px 6px -6px #000;
 }
+
 .character {
   border: 2px solid #000;
   box-shadow: 0 6px 6px -6px #000;
