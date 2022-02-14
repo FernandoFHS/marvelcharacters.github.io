@@ -1,12 +1,12 @@
 {
   "local": {
       "ENV": {
-          "redirectURI": "http://localhost:4000/"
-      }
+        "redirectURI": "http://localhost:4000/"
+    }
   },
   "production": {
       "ENV": {
-          "redirectURI": "http://production-app.co/"
+          "redirectURI": "https://fernandofhs.github.io/marvelcharacters.github.io/"
       }
   }
 }
