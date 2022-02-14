@@ -5,7 +5,7 @@
       <input type="text" class="form-control" id="search" placeholder="Digite o nome do herói" ng-model="charactersList.search" ng-change="charactersList.changeSearch()">
       </div>
     <div class="characterList" style="height: auto; overflow: auto;">
-      <div ng-repeat="character in charactersList.characters" class="card" ng-include="'./shared/components/card/card.html'"></div>
+      <card ng-repeat="character in charactersList.characters" character="character" ui-sref="characterDetail({ id: character.id })" class="card"></card>
     </div>
     <div class="box-read-more-btn">
       <button class="read-more-btn" ng-click="charactersList.loadMore()">Carregar mais</button>

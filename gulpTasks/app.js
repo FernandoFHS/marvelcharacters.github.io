@@ -37,6 +37,6 @@ gulp.task('app.js', () => {
 })
 
 gulp.task('app.assets', () => {
-  return gulp.src('assets/**/*.*')
+  return gulp.src('app/assets/**/*.*')
     .pipe(gulp.dest('public/assets'))
 })

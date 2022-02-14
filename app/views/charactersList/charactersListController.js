@@ -23,6 +23,7 @@ function CharactersListController($http, consts, marvelService,toastr) {
         vm.characters = vm.characters.concat(array)
       }else {
         vm.characters = array
+        vm.oneCharacter = res.data.data.results[0]
         vm.countItens = 0
       }
       vm.charListInfo = res.data.data

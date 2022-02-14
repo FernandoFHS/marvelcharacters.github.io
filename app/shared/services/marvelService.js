@@ -24,6 +24,15 @@ angular.module('marvelCharacters').service('marvelService', [
       });
 
     }
+
+    this.getCharacterById = function (id) {
+      const url = `${consts.apiUrl}/characters/${id}`;
+      const authString = this.generateAuthQueryString();
+      return $http({
+        url: `${url}?${authString}`,
+        method: "GET"
+      })
+    }
   }
 ]
 )
