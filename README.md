@@ -2,7 +2,7 @@
 
 Aplicação WEB usando a API da Marvel para listar e detalhar Personagens Marvel
 
-### 👉 [Live Preview](https://marvelbox.netlify.app)
+### 👉 [Live Preview](https://fernandofhs.github.io/marvelcharacters.github.io/)
 
 #### Versões das tecnologias usadas
 
